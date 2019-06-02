@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Diseño y Desarrollo web">
+	  <meta name="keywords" content="diseño web, desarrollo web, seo, posicionamiento web">
+  	<meta name="author" content="">
+    <title>Games || Play</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <div id="marca">
+        <!--- <img src="img/trebol.ico">--->
+          <h1><span class="resaltado">Trebol28</span> Welcome to Jungle</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="actual"><a href="index.html">HTML</a></li>
+            <li><a href="indexhtml.html">Con CSS</a></li>
+            <li><a href="#boletin1">Nosotros</a></li>
+            <li><a href="#cajas">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+    
+
+    <section id="cabecera">
+ <button class="botones" onclick="hacer_click1()">Cambiar letra</button>
+  <button class="botones"  onclick="hacer_click2()">Normal letra </button>
+      <div class="contenedor">
+        <h1 id="letra">Sitio oficcial de recargas de diamantes para juegos online</h1>
+        <p>Todo lo que debes de saber y accesorarte en tus recargas via online solo AQUI puedes encontrar esa confianza y seguridad al momento recargar en tu videojuego favorito.</p>
+      </div>
+    </section>
+
+    <section id="boletin1">
+      <div class="contenedor">
+        <h1>Subcríbete a nuestro canal de YT</h1>
+
+
+            <iframe width="540" height="300"  src="https://www.youtube.com/embed/l4vG8h1pB5w" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+    </div>
+    
+    </section>
+
+    <section id="cajas">
+      <div class="contenedor">
+        <div class="caja">
+          <img src="./img/logo1.png">
+          <h3>Paypal</h3>
+          <p>Recarga vía papypal sin complicasiones solo con tu ID de jugador.</p>
+        </div>
+        <div class="caja">
+          <img src="./img/logo2.png">
+          <h3>CuentaBancaria</h3>
+          <p>Recarga vía cuenta que enlace tu juego en linea más seguridad garantizada. </p>
+        </div>
+        <div class="caja">
+          <img src="./img/logo1.png">
+          <h3>PagoStore</h3>
+          <p>Recarga vía pagostore solo con tu ID de jugador y pagina oficcial de tu juego favorito.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Javier_Vélez_Loor, Copyright &copy; 2019</p>
+    </footer>
+    
+      <script>
+      function hacer_click1(){
+          document.getElementById("letra").style.fontFamily="cursive";
+      }
+      function hacer_click2(){
+          document.getElementById("letra").style.fontFamily="Times New Roman";
+      }
+</script>
+  </body>
+</html>
