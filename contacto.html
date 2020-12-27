@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <meta name="description" content="Diseño y Desarrollo web">
     <meta name="keywords" content="diseño web, desarrollo web, seo, posicionamiento web">
     <meta name="author" content="">
     <title>Games || Play</title>
+    <!-- Librerías Bootstrap: Estilos externos del sitio web -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
-  </head>
-  <body>
+    <script type="text/javascript" src="js/contacto.js"></script>
+</head>
+
+<body>
     <header>
-      <div class="contenedor">
-        <div id="marca">
-          <h1><span class="resaltado">Trebol28</span> Welcome to Jungle</h1>
+        <div class="contenedor">
+            <div id="marca">
+                <h1 id="usernav"><span class="resaltado">Trebol28</span> Welcome to Jungle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="actual"><a href="inicio.html">HTML</a></li>
+                    <li><a href="indexhtml.html">Con CSS</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li class="actual"><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#" id="close">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-          <ul>
-             <li><a href="index.html">HTML</a></li>
-            <li><a href="indexhtml.html">Con CSS</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-             <li class="actual"><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
     <section id="boletin">
-      <div class="contenedor">
-        <h1>Subscríbete a nuestro boletín</h1>
-        <form>
-          <input type="email" placeholder="Ingrese el Email...">
-          <button type="submit" class="boton1">Suscribirse</button>
-        </form>
-      </div>
+        <div class="contenedor">
+            <h1>Subscríbete a nuestro boletín</h1>
+            <form>
+                <input type="email" placeholder="Ingrese el Email...">
+                <button type="submit" class="boton1">Suscribirse</button>
+            </form>
+        </div>
     </section>
-
+    <br>
+    <br>
     <section id="main">
-      <div class="contenedor">
-        <article id="main-col">
-          <h1>Contacto</h1>
-          <form>
-            <label>Nombre</label>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-            <br>
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Ingresa tu email">
-            <br>
-            <label>Teléfono</label>
-            <input type="text" name="telefono" placeholder="Ingresa tu teléfono">
-            <br>
-            <label>Celular</label>
-            <input type="text" name="nombre" placeholder="Ingresa tu celular">
-            <br>
-            <label>Nombre</label>
-            <textarea></textarea>
-            <br>
-            <input type="submit" name="enviar" value="Enviar">
-          </form>
-        </article>
-
-        <aside id="lateral">
-          <div class="oscuro">
-            <h3>Que hacemos</h3>
-            <p>Recargas a nivel nacional o exterior solo con tu ID  de jugador, envio de cada transacción y garantización de tus recargas y seguridad con nosotros.</p>
-          </div>
-        </aside>
-      </div>
+        <div class="row">
+            <div class="container">
+                <form id="frmPerson" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="txtID" class="col-sm-2 control-label">ID</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtID" class="form-control" placeholder="ID">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtName" class="col-lg-2 control-label">Nombre</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtName" class="form-control" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPhone" class="col-lg-2 control-label">Teléfono</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtPhone" class="form-control" placeholder="Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmail" class="col-lg-2 control-label">Email</label>
+                        <div class="col-sm-4">
+                            <input type="email" id="txtEmail" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-sm-4">
+                            <input type="submit" value="Insertar" id="btnSave" class="btn btn-success" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
+    <br>
+    <br>
+
+    <div>
+        <table id="tblList">
+            <caption>Contenido de Contacto</caption>
+
+        </table>
+
+    </div>
     <footer>
-      <p>Javier_Vélez_Loor, Copyright &copy; 2019</p>
+        <p>Cedeño-Villigua, Copyright &copy; 2020</p>
     </footer>
-  </body>
+    <script src="js/nav.js"></script>
+    <!-- <script src="js/contacto.js"></script> -->
+
+</body>
+
 </html>
